@@ -15,13 +15,12 @@ import java.util.List;
 import java.util.Objects;
 import java.util.UUID;
 
+@Entity
+@Table(name = "users")
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
-@Entity
-@Table(name = "users")
 public class User {
     @Id
     @Column(name = "id",updatable = false, nullable = false)
